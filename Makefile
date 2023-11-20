@@ -26,9 +26,7 @@ test:
 	make -C app test
 
 report:
-	make -C app && ./gradlew jacocoTestReport
-
-
+	cd app && ./gradlew jacocoTestReport
 
 check-updates:
 	make -C app check-updates
