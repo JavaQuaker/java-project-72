@@ -1,7 +1,7 @@
 
-@import gg.jte.Content
-@param Content content
-@param Content footer = null
+        @import gg.jte.Content
+        @param Content content
+        @param Content footer = null
 
         <!--<!doctype html>
         <html lang="en">

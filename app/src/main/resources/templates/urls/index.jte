@@ -1,5 +1,5 @@
 
-@import hexlet.code.dto.UrlsPage
+        @import hexlet.code.dto.UrlsPage
         @import hexlet.code.model.Url
         @import hexlet.code.model.UrlCheck
         @param UrlsPage page
