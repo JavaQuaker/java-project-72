@@ -6,11 +6,11 @@ import hexlet.code.controller.UrlsController;
 import hexlet.code.controller.UrlCheckController;
 import hexlet.code.repository.BaseRepository;
 import io.javalin.Javalin;
-import java.io.File;
+//import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
+//import java.nio.file.Files;
 import java.sql.SQLException;
-import java.util.stream.Collectors;
+//import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import gg.jte.ContentType;
 import gg.jte.TemplateEngine;
@@ -48,17 +48,17 @@ public class App {
         hikariConfig.setJdbcUrl(jdbcUrlCurrent);
 
         HikariDataSource dataSource = new HikariDataSource(hikariConfig);
-        var url = App.class.getClassLoader().getResource("schema.sql");
-        var file = new File(url.getFile());
-        var sql = Files.lines(file.toPath())
-                .collect(Collectors.joining("\n"));
-
-        log.info(sql);
-
-        try (var connection = dataSource.getConnection();
-             var statement = connection.createStatement()) {
-            statement.execute(sql);
-        }
+//        var url = App.class.getClassLoader().getResource("schema.sql");
+//        var file = new File(url.getFile());
+//        var sql = Files.lines(file.toPath())
+//                .collect(Collectors.joining("\n"));
+//
+//        log.info(sql);
+//
+//        try (var connection = dataSource.getConnection();
+//             var statement = connection.createStatement()) {
+//            statement.execute(sql);
+//        }
         BaseRepository.dataSource = dataSource;
 
         var app = Javalin.create(config -> {
