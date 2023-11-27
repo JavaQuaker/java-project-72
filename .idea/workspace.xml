@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf49570f-2050-43b1-ae10-d28a80fa1f25" name="Changes" comment="check">
+    <list default="true" id="bf49570f-2050-43b1-ae10-d28a80fa1f25" name="Changes" comment="check test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.app [build]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hexlet.code.App" />
       <module name="app.main" />
@@ -146,10 +150,33 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="app [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.app [build]" />
         <item itemvalue="Gradle.AppTest" />
+        <item itemvalue="Gradle.app [clean]" />
+        <item itemvalue="Gradle.app [build]" />
         <item itemvalue="Gradle.AppTest.testMainPage" />
         <item itemvalue="Application.App" />
       </list>
@@ -260,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700658607584</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="deploy">
+      <option name="closed" value="true" />
+      <created>1700725482877</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700725482877</updated>
+    </task>
+    <task id="LOCAL-00014" summary="check test">
+      <option name="closed" value="true" />
+      <created>1700727463685</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700727463685</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,10 +320,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="test Make" />
-    <MESSAGE value="check test" />
     <MESSAGE value="Changing permission of gradlew" />
     <MESSAGE value="check" />
-    <option name="LAST_COMMIT_MESSAGE" value="check" />
+    <MESSAGE value="deploy" />
+    <MESSAGE value="check test" />
+    <option name="LAST_COMMIT_MESSAGE" value="check test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

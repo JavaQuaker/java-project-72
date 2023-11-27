@@ -18,25 +18,25 @@ import io.javalin.rendering.template.JavalinJte;
 @Slf4j
 
 public class App {
-    private static final String JDBC_DATABASE_URL = "jdbc:postgresql://localhost:5432/postgresDatabase";
+
     private static TemplateEngine createTemplateEngine() {
         ClassLoader classLoader = App.class.getClassLoader();
         ResourceCodeResolver codeResolver = new ResourceCodeResolver("templates", classLoader);
         TemplateEngine templateEngine = TemplateEngine.create(codeResolver, ContentType.Html);
         return templateEngine;
     }
+
     private static int getPort() {
         String port = System.getenv().getOrDefault("PORT", "7070");
         return Integer.valueOf(port);
     }
-    public static String getEnvironment() {
-        return System.getenv().getOrDefault("JDBC_DATA_H2_URL", "jdbc:h2:mem:project");
-    }
+    private static final String JDBC_DATA_H2 = "jdbc:h2:mem:project";
     static String jdbcUrlCurrent = getJdbcDatabaseUrl();
+
     public static String getJdbcDatabaseUrl() {
         String jdbcUrl = System.getenv("JDBC_DATABASE_URL");
         if (jdbcUrl == null || jdbcUrl.isEmpty()) {
-            jdbcUrl = getEnvironment();
+            jdbcUrl = JDBC_DATA_H2;
         }
         return jdbcUrl;
     }
@@ -48,17 +48,17 @@ public class App {
         hikariConfig.setJdbcUrl(jdbcUrlCurrent);
 
         HikariDataSource dataSource = new HikariDataSource(hikariConfig);
-        var url = App.class.getClassLoader().getResource("schema.sql");
-        var file = new File(url.getFile());
-        var sql = Files.lines(file.toPath())
-                .collect(Collectors.joining("\n"));
-
-        log.info(sql);
-
-        try (var connection = dataSource.getConnection();
-             var statement = connection.createStatement()) {
-            statement.execute(sql);
-        }
+//        var url = App.class.getClassLoader().getResource("schema.sql");
+//        var file = new File(url.getFile());
+//        var sql = Files.lines(file.toPath())
+//                .collect(Collectors.joining("\n"));
+//
+//        log.info(sql);
+//
+//        try (var connection = dataSource.getConnection();
+//             var statement = connection.createStatement()) {
+//            statement.execute(sql);
+//        }
         BaseRepository.dataSource = dataSource;
 
         var app = Javalin.create(config -> {
