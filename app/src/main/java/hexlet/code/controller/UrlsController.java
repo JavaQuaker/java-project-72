@@ -60,7 +60,7 @@ public class UrlsController {
                 )
                 .toLowerCase();
 
-        if (!UrlRepository.findName(parsedUrl.toString()).isPresent()) {
+        if (!UrlRepository.findName(normalizedUrl.toString()).isPresent()) {
             Url newUrl = new Url(normalizedUrl);
             UrlRepository.save(newUrl);
             ctx.sessionAttribute("flash", "site is successfully added");

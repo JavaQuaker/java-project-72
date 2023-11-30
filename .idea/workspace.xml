@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf49570f-2050-43b1-ae10-d28a80fa1f25" name="Changes" comment="check test">
+    <list default="true" id="bf49570f-2050-43b1-ae10-d28a80fa1f25" name="Changes" comment="test deploy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/controller/UrlCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/controller/UrlCheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/controller/UrlsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/controller/UrlsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/repository/UrlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/repository/UrlRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/hexlet/code/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hexlet/code/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/resources/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/resources/example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jte-classes/gg/jte/generated/ondemand/urls/JteshowGenerated.class" beforeDir="false" />
@@ -63,10 +68,10 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;instant.run&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hexlet.code.App" />
       <module name="app.main" />
@@ -303,7 +308,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700727463685</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="test deploy">
+      <option name="closed" value="true" />
+      <created>1701085855982</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701085855982</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test deploy">
+      <option name="closed" value="true" />
+      <created>1701087750691</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1701087750691</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,7 +345,8 @@
     <MESSAGE value="check" />
     <MESSAGE value="deploy" />
     <MESSAGE value="check test" />
-    <option name="LAST_COMMIT_MESSAGE" value="check test" />
+    <MESSAGE value="test deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="test deploy" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

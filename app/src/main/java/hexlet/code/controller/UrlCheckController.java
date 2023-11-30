@@ -10,6 +10,8 @@ import io.javalin.http.Context;
 import io.javalin.http.NotFoundResponse;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+
 public class UrlCheckController {
     public static void checkUrl(Context ctx) throws SQLException {
         long id = ctx.pathParamAsClass("id", long.class).get();
@@ -23,7 +25,9 @@ public class UrlCheckController {
             System.out.println("status_code: " + statusCode);
             String body = response.getBody().toString();
             Document document = Jsoup.parse(body);
-            String h1 = document.selectFirst("h1") == null ? "" : document.selectFirst("h1").html();
+//            String h1 = document.selectFirst("h1") == null ? "" : document.selectFirst("h1").html();
+            Element element = document.selectFirst("h1");
+            String h1 = element == null ? "" : element.text();
 
             System.out.println("h1: " + h1);
 
