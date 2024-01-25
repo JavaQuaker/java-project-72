@@ -5,7 +5,8 @@ _________________________________________________
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/JavaQuaker/java-project-72/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/JavaQuaker/java-project-72/actions)
-[view the project](https://java-project-72-8ytc.onrender.com)
+
+[view on render](https://java-project-72-8ytc.onrender.com)
 ______________________________________________________________________________________________________________________________________________________________________
 
 <h4>Run</h4>
